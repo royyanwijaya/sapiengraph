@@ -31,7 +31,7 @@
 <body>
 
   <!-- POPUP/MODAL-->
-  <div id="myModal" class="modal fade">
+  <div id="myModal" class="modal modalpopup fade">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -1741,7 +1741,7 @@
       $("#myModal").modal('show');
     });
 
-    $(document).on("click", function () {
+    $(document).on("click", ".modalpopup", function () {
       $('#myModal').modal('hide');
       $('#myModalStep1').modal('show');
     });
