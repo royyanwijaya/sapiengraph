@@ -261,10 +261,15 @@
               <!--People-->
               <div class="card-body">
 
-                <h3 class="font-weight-bold mb-7">
-                  <img class="img-fluid pr-2" width="40px" src="assets/img/icons/man.svg" alt="Card people icon">
-                  People
-                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="h3 font-weight-bold mb-7">
+                    <img class="img-fluid pr-2" width="40px" src="assets/img/icons/man.svg" alt="Card people icon">
+                    People
+                  </div>
+                  <div class="text-right">
+                    <h5><span class="badge badge-pill badge-secondary-soft">=SG_PERSON()</span></h5>
+                  </div>
+                </div>
 
                 <div class="list-group list-group-flush">
 
@@ -289,12 +294,16 @@
                     
                     <!-- Toggle -->
                     <a class="align-items-center text-decoration-none text-success" href="#" role="button">
-                      <div class="mr-auto">
+                      <div class="mr-auto d-md-flex justify-content-between align-items-center">
                         
                         <!-- Title -->
-                        <p class="font-weight-bold mb-0">
+                        <p class="font-weight-bold mb-1 mb-md-0 ">
                           Work experience history
                         </p>
+
+                        <div class="text-left text-md-right pt-0">
+                          <h5><span class="badge badge-pill badge-secondary-soft mt-2">=SG_PERSON_WORK()</span></h5>
+                        </div>
 
                       </div>
 
@@ -309,11 +318,15 @@
                     
                         <div class="align-items-center text-decoration-none text-success">
 
-                          <div class="mr-auto">
+                          <div class="mr-auto d-md-flex justify-content-between align-items-center">
                         
-                            <p class="font-weight-bold pb-1 pt-5">
+                            <p class="font-weight-bold mb-1 mb-md-0 mt-5 mt-md-0">
                               Education history
                             </p>
+
+                            <div class="text-left text-md-right pb-5 pt-0">
+                              <h5><span class="badge badge-pill badge-secondary-soft mb-0 mt-2 mt-md-6">=SG_PERSON_EDUCATION()</span></h5>
+                            </div>
 
                           </div>
     
@@ -684,16 +697,21 @@
               <!--Companies-->
               <div class="card-body">
 
-                <h3 class="font-weight-bold mb-7">
-                  <img class="img-fluid pr-2" width="40px" src="assets/img/icons/company.svg" alt="Card image cap">
-                  Companies
-                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="h3 font-weight-bold mb-7">
+                    <img class="img-fluid pr-2" width="40px" src="assets/img/icons/company.svg" alt="Card image cap">
+                    Companies
+                  </div>
+                  <div class="text-right">
+                    <h5><span class="badge badge-pill badge-secondary-soft">=SG_COMPANY()</span></h5>
+                  </div>
+                </div>
 
                 <!-- List group-->
                 <div class="list-group list-group-flush">
 
                   <div class="list-group-item">
-                  
+                   
                     <!-- Toggle -->
                     <a class="align-items-center text-decoration-none text-success" href="#" role="button">
                       <div class="mr-auto">
@@ -1175,7 +1193,7 @@
               <li class="mb-3">
                 <a href="index.html" class="text-reset">
                   Home
-                </a>
+                </a> 
               </li>
               <li class="mb-3">
                 <a href="#!" class="text-reset">
