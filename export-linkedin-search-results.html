@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
     <!-- Map -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -29,6 +31,267 @@
 
   </head>
   <body>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+
+            <h5 class="modal-title" id="exampleModalLabel">
+              Filter only 
+              <div class="btn-group mb-2">
+                <div class="dropdown">
+                  <button class="btn btn-light btn-xs dropdown-toggle mt-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    People
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              by
+            </h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+
+          <div class="modal-body">
+            
+            <div class="mb-4">
+
+              <h2 class="h4 font-weight-bold">
+                Connections
+              </h2>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">
+                  1st
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">
+                  2nd
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                <label class="custom-control-label" for="customCheck3">
+                  3rd+
+                </label>
+              </div>
+
+            </div>
+
+            <div class="mb-4">
+
+              <h2 class="h4 font-weight-bold">
+                Locations
+              </h2>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="PapuaNewGuinea">
+                <label class="custom-control-label" for="PapuaNewGuinea">
+                  Papua New Guinea
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Australia">
+                <label class="custom-control-label" for="Australia">
+                  Australia
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="US">
+                <label class="custom-control-label" for="US">
+                  United States
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="PM">
+                <label class="custom-control-label" for="PM">
+                  Port Moresby
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="QA">
+                <label class="custom-control-label" for="QA">
+                  Queensland, Australia
+                </label>
+              </div>
+
+              <button class="btn btn-outline-secondary btn-xs">
+                <i class="fe fe-plus"></i> Add a location
+              </button>
+
+            </div>
+
+            <div class="mb-4">
+
+              <h2 class="h4 font-weight-bold">
+                Current company
+              </h2>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="newMining">
+                <label class="custom-control-label" for="newMining">
+                  Newcrest Mining
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="okTedi">
+                <label class="custom-control-label" for="okTedi">
+                  Ok Tedi Mining Limited
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="PNGair">
+                <label class="custom-control-label" for="PNGair">
+                  PNG Air
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="telkomPNG">
+                <label class="custom-control-label" for="telkomPNG">
+                  Telkom PNG
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="univPNG">
+                <label class="custom-control-label" for="univPNG">
+                  PNG University of Technology
+                </label>
+              </div>
+
+              <button class="btn btn-outline-secondary btn-xs">
+                <i class="fe fe-plus"></i> Add a company
+              </button>
+
+            </div>
+
+            <div class="mb-4">
+
+              <h2 class="h4 font-weight-bold">
+                Past company
+              </h2>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="NMI">
+                <label class="custom-control-label" for="NMI">
+                  Newcrest Mengi
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="OKT">
+                <label class="custom-control-label" for="OKT">
+                  OK Tedi Mining Limited
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="TPNG">
+                <label class="custom-control-label" for="TPNG">
+                  Talikom PNG
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="BL">
+                <label class="custom-control-label" for="BL">
+                  Bemobile Limited
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="BFGI">
+                <label class="custom-control-label" for="BFGI">
+                  BSP Financial Group Limited
+                </label>
+              </div>
+
+              <button class="btn btn-outline-secondary btn-xs">
+                <i class="fe fe-plus"></i> Add a company
+              </button>
+
+            </div>
+
+            <div class="mb-4">
+
+              <h2 class="h4 font-weight-bold">
+                School
+              </h2>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="SOU">
+                <label class="custom-control-label" for="SOU">
+                  Southern Cross University
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="CQU">
+                <label class="custom-control-label" for="CQU">
+                  CQUniversity
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="SP">
+                <label class="custom-control-label" for="SP">
+                  Singapore Polytechnic
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="DWU">
+                <label class="custom-control-label" for="DWU">
+                  Divine World University
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="TNS">
+                <label class="custom-control-label" for="TNS">
+                  The New School
+                </label>
+              </div>
+
+              <button class="btn btn-outline-secondary btn-xs">
+                <i class="fe fe-plus"></i> Add a company
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
 
     <!-- CONTENT
     ================================================== -->
@@ -47,10 +310,72 @@
               Export LinkedIn Search Results
             </h1>
 
-            <div class="bg-white shadow-light rounded px-6 py-5 mb-4">
-              <h2 class="h5 mb-0">
-                Search results about "<span class="text-info">kevin png</span>"
-              </h2>
+            <div class="card shadow-light-lg shadow-light mb-4">
+
+              <div class="card-body">
+
+                <h2 class="h5 mb-4">
+                  Search results about "<span class="text-info">kevin png</span>"
+                </h2>
+
+                <div class="btn-group mb-2">
+                  <div class="dropdown">
+                    <button class="btn btn-success btn-xs dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      People
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-group mb-2">
+                  <div class="dropdown">
+                    <button class="btn btn-outline-secondary btn-xs dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Connections
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-group mb-2">
+                  <div class="dropdown">
+                    <button class="btn btn-outline-secondary btn-xs dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Locations
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-group mb-2">
+                  <div class="dropdown">
+                    <button class="btn btn-outline-secondary btn-xs dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Current company
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <button class="btn btn-block btn-outline-secondary btn-xs" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  All filters
+                </button>
+
+              </div>
+
             </div>
 
             <div class="card shadow-light-lg shadow-light">
@@ -280,14 +605,14 @@
 
           <div class="col-12 col-md-6 pr-md-15 pl-md-10 pt-md-12 pt-8">
 
-            <div class="mb-md-10"></div>
+            <div class="mb-md-12"></div>
+
+            <h2 class="h1 font-weight-bold mb-8">
+              Order details
+            </h2>
 
             <div class="card shadow-light shadow-light-lg border border-success mt-8">
               <div class="card-body">
-
-                <h3 class="font-weight-bold mb-6">
-                  Order details
-                </h3>
 
                 <div class="form-group mb-6">
                   <label for="emailInput">Email address</label>
