@@ -1,3 +1,14 @@
+.contentToHide {
+  display: none; /* Hidden by default */
+}
+.showContent .contentToHide {
+  display: inline; /* Display inline when the switch is ON */
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #28a745; /* Bootstrap success color */
+}
+
 .nav-link:hover{
   color: #42BA96 !important;
 }

@@ -209,29 +209,37 @@
 
                     <td>
                       <span class="h2 font-weight-bold">$</span><span class="h2 font-weight-bold price mb-0" data-annual="49" data-monthly="40">40</span> <span class="h5 font-weight-normal">/ mo</span>
-                      <div class="text-uppercase text-muted h6">
-                        Paid annually
+                      <div class="contentToHide">
+                        <p class="text-uppercase text-muted h6 mb-0">
+                          Paid annually
+                        </p>
                       </div>
                     </td>
 
                     <td>
                       <span class="h2 font-weight-bold">$</span><span class="h2 font-weight-bold price mb-0" data-annual="299" data-monthly="249">249</span> <span class="h5 font-weight-normal">/ mo</span>
-                      <div class="text-uppercase text-muted h6">
-                        Paid annually
+                      <div class="contentToHide">
+                        <p class="text-uppercase text-muted h6 mb-0">
+                          Paid annually
+                        </p>
                       </div>
                     </td>
 
                     <td>
                       <span class="h2 font-weight-bold">$</span><span class="h2 font-weight-bold price mb-0" data-annual="899" data-monthly="749">749</span> <span class="h5 font-weight-normal">/ mo</span>
-                      <div class="text-uppercase text-muted h6">
-                        Paid annually
+                      <div class="contentToHide">
+                        <p class="text-uppercase text-muted h6 mb-0">
+                          Paid annually
+                        </p>
                       </div>
                     </td>
 
                     <td>
                       <span class="h2 font-weight-bold">$</span><span class="h2 font-weight-bold price mb-0" data-annual="1899" data-monthly="1582">249</span> <span class="h5 font-weight-normal">/ mo</span>
-                      <div class="text-uppercase text-muted h6">
-                        Paid annually
+                      <div class="contentToHide">
+                        <p class="text-uppercase text-muted h6 mb-0">
+                          Paid annually
+                        </p>
                       </div>
                     </td>
 
@@ -250,32 +258,40 @@
                       </p>
                     </td>
 
-                    <td class="font-weight-bold">
-                      12,500 + 2083 credits / mo
-                      <p class="text-uppercase text-info small font-weight-bold mb-0">
-                        <i class="neu-gift mb-1"></i> 2 months free credits
-                      </p>
+                    <td class="font-weight-bold showContent">
+                      12,500 <span class="contentToHide">+ 2083</span> credits / mo
+                      <div class="contentToHide">
+                        <p class="text-uppercase text-info small font-weight-bold mb-0">
+                          <i class="neu-gift mb-1"></i> 2 months free credits
+                        </p>
+                      </div>
                     </td>
 
-                    <td class="font-weight-bold">
-                      125,000 + 20,833 credits / mo
-                      <p class="text-uppercase text-info small font-weight-bold mb-0">
-                        <i class="neu-gift mb-1"></i> 2 months free credits
-                      </p>
+                    <td class="font-weight-bold showContent">
+                      125,000 <span class="contentToHide">+ 20,833</span> credits / mo
+                      <div class="contentToHide">
+                        <p class="text-uppercase text-info small font-weight-bold mb-0">
+                          <i class="neu-gift mb-1"></i> 2 months free credits
+                        </p>
+                      </div>
                     </td>
 
-                    <td class="font-weight-bold">
-                      449,500 + 74,916 credits / mo
-                      <p class="text-uppercase text-info small font-weight-bold mb-0">
-                        <i class="neu-gift mb-1"></i> 2 months free credits
-                      </p>
+                    <td class="font-weight-bold showContent">
+                      449,500 <span class="contentToHide">+ 74,916</span> credits / mo
+                      <div class="contentToHide">
+                        <p class="text-uppercase text-info small font-weight-bold mb-0">
+                          <i class="neu-gift mb-1"></i> 2 months free credits
+                        </p>
+                      </div>
                     </td>
 
-                    <td class="font-weight-bold">
-                      1,055,000 + 175,833 credits / mo
-                      <p class="text-uppercase text-info small font-weight-bold mb-0">
-                        <i class="neu-gift mb-1"></i> 2 months free credits
-                      </p>
+                    <td class="font-weight-bold showContent">
+                      1,055,000 <span class="contentToHide">+ 175,833</span> credits / mo
+                      <div class="contentToHide">
+                        <p class="text-uppercase text-info small font-weight-bold mb-0">
+                          <i class="neu-gift mb-1"></i> 2 months free credits
+                        </p>
+                      </div>
                     </td>
 
                     <td class="font-weight-bold">
@@ -448,6 +464,26 @@
               </p>
 
             </div>
+
+            <!-- Hide contents -->
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const toggleSwitch = document.getElementById('billingSwitch');
+                const contentToHideElements = document.querySelectorAll('.contentToHide');
+            
+                // Initial state check
+                contentToHideElements.forEach(function(element) {
+                  element.style.display = toggleSwitch.checked ? 'inline' : 'none';
+                });
+            
+                // Add event listener for toggle switch change
+                toggleSwitch.addEventListener('change', function () {
+                  contentToHideElements.forEach(function(element) {
+                    element.style.display = toggleSwitch.checked ? 'inline' : 'none';
+                  });
+                });
+              });
+            </script>
 
           </div>
           
