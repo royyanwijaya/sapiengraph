@@ -1,3 +1,7 @@
+.border-200 {
+  border-bottom: 1px solid #e2e8f0; /* Replace #cbd5e1 with your desired color code */
+}
+
 .contentToHide {
   display: none; /* Hidden by default */
 }
