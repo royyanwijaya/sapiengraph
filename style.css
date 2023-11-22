@@ -1,5 +1,9 @@
+.border-700 {
+  border-bottom: 1px solid #334155;
+}
+
 .border-200 {
-  border-bottom: 1px solid #e2e8f0; /* Replace #cbd5e1 with your desired color code */
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .contentToHide {

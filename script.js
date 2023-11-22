@@ -13,4 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
         element.style.display = toggleSwitch.checked ? 'inline' : 'none';
       });
     });
+
+    
+  // Tooltip Code  
+  $('[data-toggle="tooltip"]').tooltip();
+  
   });
