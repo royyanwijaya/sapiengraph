@@ -58,3 +58,15 @@
 .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
   background-color: #C8FFC8; 
 }
+
+.logo {
+  filter: grayscale(100%) contrast(10%) sepia(60%) invert(100%);
+  /* Adjust the percentage in grayscale() for intensity of grayscale */
+  transition: filter 0.3s ease; /* Adding transition for smooth effect */
+  opacity: 0.6; /* Adjust the value from 0 to 1 for different levels of transparency */
+}
+
+.logo:hover {
+  filter: none; /* Remove the grayscale filter on hover */
+  opacity: 1;
+}
