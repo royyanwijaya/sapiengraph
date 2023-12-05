@@ -70,3 +70,22 @@
   filter: none; /* Remove the grayscale filter on hover */
   opacity: 1;
 }
+
+.custom-opacity {
+  opacity: 0.4; /* Adjust the value from 0 to 1 for different opacity levels */
+}
+
+.bottom-left-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 250px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-img-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Adjust as needed */
+}
