@@ -75,6 +75,10 @@
   opacity: 0.4; /* Adjust the value from 0 to 1 for different opacity levels */
 }
 
+.custom-opacity-title {
+  opacity: 0.8; /* Adjust the value from 0 to 1 for different opacity levels */
+}
+
 .bottom-left-image {
   position: absolute;
   bottom: 0;
@@ -89,3 +93,9 @@
   left: 0;
   width: 100%; /* Adjust as needed */
 }
+
+.custom-rounded {
+  border-radius: 1rem 1rem 1rem 1rem; /* Custom corner rounding */
+  overflow: hidden; /* Ensure the image doesn't overflow rounded corner */
+}
+
