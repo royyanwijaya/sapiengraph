@@ -72,7 +72,7 @@
 }
 
 .custom-opacity {
-  opacity: 0.4; /* Adjust the value from 0 to 1 for different opacity levels */
+  opacity: 0.5; /* Adjust the value from 0 to 1 for different opacity levels */
 }
 
 .custom-opacity-title {
@@ -98,4 +98,16 @@
   border-radius: 1rem 1rem 1rem 1rem; /* Custom corner rounding */
   overflow: hidden; /* Ensure the image doesn't overflow rounded corner */
 }
+
+/* Style for progress bar */
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  transition: width 1s ease-in-out;
+}
+
+
 
