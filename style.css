@@ -99,15 +99,6 @@
   overflow: hidden; /* Ensure the image doesn't overflow rounded corner */
 }
 
-/* Style for progress bar */
-.progress {
-  height: 20px;
-  margin-bottom: 20px;
-}
-
-.progress-bar {
-  transition: width 1s ease-in-out;
-}
 
 
 
