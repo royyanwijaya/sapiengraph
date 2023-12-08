@@ -99,15 +99,13 @@
   overflow: hidden; /* Ensure the image doesn't overflow rounded corner */
 }
 
-/* Style for progress bar */
-.progress {
-  height: 20px;
-  margin-bottom: 20px;
+.custom-rounded-testimonial {
+  border-radius: 1rem; /* Custom corner rounding */
 }
 
-.progress-bar {
-  transition: width 1s ease-in-out;
+.custom-rounded-testimonial a {
+  border-radius: 1rem 0rem 0rem 1rem; /* Custom corner rounding */
+  overflow: hidden;
 }
-
 
 
