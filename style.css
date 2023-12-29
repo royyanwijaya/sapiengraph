@@ -108,4 +108,25 @@
   overflow: hidden;
 }
 
+/* Custom CSS for navbar link hover color */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #CBEAE0 !important;
+}
+
+/* Custom CSS for "Sign in" link hover color */
+.text-center.ml-auto .btn.btn-sm.btn-link.text-white:hover {
+  color: #CBEAE0 !important;
+}
+
+/* Custom CSS for "Install Sheets Add-ons" link text color on hover */
+.navbar-btn.btn.btn-pill.btn-sm.btn-outline-white.text-white.lift.ml-auto:hover {
+  color: #389E7F !important;
+}
+
+/* Custom CSS for text color on medium-sized screens (tablets) */
+@media (max-width: 991.98px) {
+  .text-md-gray {
+    color: #506690 !important; /* Your desired text color for medium-sized screens */
+  }
+}
 
