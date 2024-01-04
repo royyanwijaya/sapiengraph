@@ -130,3 +130,27 @@
   }
 }
 
+.border-width-2 {
+  border-width: 2px !important;
+}
+
+.image-gradient-bg {
+  background-color:hsla(353,0%,100%,1);
+  background-image:
+  radial-gradient(at 36% 28%, hsla(153,99%,77%,0.54) 0px, transparent 50%),
+  radial-gradient(at 63% 71%, hsla(181,100%,68%,0.38) 0px, transparent 50%);
+}
+
+.image-gradient-bg-2 {
+  background-color:hsla(242,0%,100%,1);
+  background-image:
+  radial-gradient(at 33% 37%, hsla(258,99%,77%,0.54) 0px, transparent 50%),
+  radial-gradient(at 66% 65%, hsla(206,100%,66%,0.38) 0px, transparent 50%);
+}
+
+.image-gradient-bg-3 {
+  background-color:hsla(353,0%,100%,1);
+  background-image:
+  radial-gradient(at 37% 30%, hsla(157,45%,53%,0.54) 0px, transparent 50%),
+  radial-gradient(at 63% 71%, hsla(29,98%,64%,0.45) 0px, transparent 50%);
+}
