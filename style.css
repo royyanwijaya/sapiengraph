@@ -134,6 +134,17 @@
   border-width: 2px !important;
 }
 
+.border-width-4 {
+  border-width: 4px !important;
+}
+
+/* Border changed when in mobile */
+@media screen and (max-width: 768px) {
+  .border-width-4 {
+    border-width: 2px !important;
+  }
+}
+
 .image-gradient-bg {
   background-color:hsla(353,0%,100%,1);
   background-image:
