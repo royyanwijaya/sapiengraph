@@ -125,6 +125,21 @@ pre {
   height: auto;
 }
 
+/* Custom CSS for navbar link hover color */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #CBEAE0 !important;
+}
+
+/* Custom CSS for "Sign in" link hover color */
+.text-center.ml-auto .btn.btn-sm.btn-link.text-white:hover {
+  color: #CBEAE0 !important;
+}
+
+/* Custom CSS for "Install Sheets Add-ons" link text color on hover */
+.navbar-btn.btn.btn-pill.btn-sm.btn-outline-white.text-white.lift.ml-auto:hover {
+  color: #389E7F !important;
+}
+
 .vr{ 
   
   border:         none;
@@ -132,13 +147,19 @@ pre {
   border-left:    2px solid hsla(200, 10%, 50%,100);
 }
 
+
 .vr-active{ 
   
   border:         none;
-  border-color: black !important;
+  border-color: #42BA96 !important;
   border-left:    2px solid hsla(200, 10%, 50%,100);
 }
 
 .p-toc{
   line-height: 1.4 !important;
 }
+
+body a:hover {
+  text-decoration: none;
+}
+
