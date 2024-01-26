@@ -163,3 +163,12 @@ body a:hover {
   text-decoration: none;
 }
 
+.bg-dark-success {
+  background-color: #359479;
+}
+
+.form-control:focus {
+  border-color: #03d97e !important;
+  box-shadow: 0 0 0 0.2rem rgba(245, 255, 247, 0.25) !important;
+} 
+
