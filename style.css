@@ -1,3 +1,21 @@
+.bg-success-light {
+  background-color: #f0fdf4;
+}
+
+.pagination .page-link {
+  color: #42ba96; /* Green color */
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #42ba96; /* Background color for the active page */
+  border-color: #42ba96; /* Border color for the active page */
+}
+
+.rounded-table {
+  border-radius: 10px; /* You can adjust the value to control the amount of rounding */
+  overflow: hidden; /* This ensures that the rounded corners are visible */
+}
+
 .no-select {
   user-select: none;
 }
