@@ -25,6 +25,10 @@
   overflow: hidden;
 }
 
+.border-custom-1 {
+  border: 1px solid #e2e8f0;
+}
+
 .border-custom {
   border: 2px solid #e2e8f0;
 }
