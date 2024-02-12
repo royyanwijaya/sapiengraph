@@ -36,7 +36,7 @@
   <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalTitle"
     aria-hidden="true">
 
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-dialog modal-lg" role="document">
 
       <div class="modal-content">
 
@@ -53,14 +53,21 @@
                 </svg>
               </div>
             </div>
-            <input type="search" class="form-control bg-light modal-title" placeholder="Search company name or domain">
+            <input id="searchInput" type="text" class="form-control bg-light modal-title"
+              placeholder="Search company name or domain" autocomplete="off">
           </div>
         </div>
 
         <div class="modal-body">
-          <p class="mb-0 text-muted text-center py-6">
-            No recent searches
-          </p>
+
+          <div class="mb-0">
+
+            <ul id="searchResults" class="list-group">
+              <!-- Search result here -->
+            </ul>
+
+          </div>
+
         </div>
 
         <!--
@@ -852,6 +859,7 @@
   <!-- Theme JS -->
   <script src="./assets/js/theme.min.js"></script>
   <script src="script.js"></script>
+  <script src="script-autocomplete.js"></script>
 
 </body>
 
