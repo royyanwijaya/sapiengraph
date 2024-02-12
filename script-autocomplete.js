@@ -15,7 +15,7 @@ const data = [
         companyName: "Apple",
         website: "https://apple.com",
         description: "We’re a diverse collective of thinkers and doers, continually reimagining what’s possible to help us all do what we love in new ways.",
-        logo: "./assets/img/logo/apple 14.svg"
+        logo: "./assets/img/logo/Apple 14.svg"
     },
     {
         companyName: "Microsoft",
