@@ -1,4 +1,5 @@
-const data = [
+$(document).ready(function() {
+  const data = [
     {
       companyName: "Google",
       website: "https://google.com",
@@ -66,17 +67,10 @@ const data = [
     }
   }
 
-  $(document).ready(function() {
-    // Event listener for input change
-    $('#searchInput').on('input', function() {
-      const inputValue = $(this).val();
-      if (inputValue.trim() !== '') {
-        $('#placeholder').hide(); // Hide placeholder when input is not empty
-        const filteredData = filterData(inputValue);
-        displayResults(filteredData);
-      } else {
-        $('#searchResults').empty(); // Clear results when input is empty
-        $('#placeholder').show(); // Show placeholder when input is empty
-      }
-    });
+  // Event listener for input field
+  $('#searchInput').on('input', function() {
+    const input = $(this).val(); // Get the input value
+    const results = filterData(input); // Filter data based on input
+    displayResults(results); // Display filtered results
   });
+});
