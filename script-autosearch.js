@@ -46,7 +46,7 @@ $(document).ready(function() {
     } else {
       results.forEach(result => {
         resultList.append(`
-          <div class="border-bottom lift px-4 py-4 mb-3 mb-md-6">
+          <div class="border-bottom px-4 py-4 mb-3 mb-md-6">
             <img class="img-fluid img mb-4" width="32" height="auto" alt="company logo" src="${result.logo}">
             <h5 class="h2 font-weight-bold mb-md-4">
               ${result.companyName}
@@ -72,5 +72,14 @@ $(document).ready(function() {
     const input = $(this).val(); // Get the input value
     const results = filterData(input); // Filter data based on input
     displayResults(results); // Display filtered results
+
+    // Show search results container when there is input in the search bar
+    $('#searchResultsContainer').show();
+  });
+
+  // Hide search results container when focus is lost from searchInput
+  $('#searchInput').on('blur', function() {
+    // Hide search results container
+    $('#searchResultsContainer').hide();
   });
 });
