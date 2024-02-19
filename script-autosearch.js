@@ -65,6 +65,9 @@ $(document).ready(function() {
         `);
       });
     }
+
+    // Hide dataCrawled section when there is input in the search bar
+    $('#dataCrawled').hide();
   }
 
   // Event listener for input field
@@ -75,6 +78,14 @@ $(document).ready(function() {
 
     // Show search results container when there is input in the search bar
     $('#searchResultsContainer').show();
+
+    // Hide dataCrawled section when there is input in the search bar
+    $('#dataCrawled').hide();
+
+    // Show dataCrawled section when there is no input in the search bar
+    if ($('#searchInput').val() === '') {
+      $('#dataCrawled').show();
+    }
   });
 
   // Hide search results container when focus is lost from searchInput
