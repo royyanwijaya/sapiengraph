@@ -234,7 +234,7 @@
 
 .blur{
   -webkit-filter: blur(3px);
-  filter: blur(3px);
+  filter: blur(5px);
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -248,3 +248,10 @@
   border-color: #03d97e;
   box-shadow: 0 0 0 0.2rem rgba(245, 255, 247, 0.25);
 } 
+
+.custom-place {
+  border: none !important;
+  position: relative; /* Ensure positioning context */
+  z-index: 1; /* Set a higher z-index to make the button appear above other content */
+  margin-bottom: -720px;
+}
