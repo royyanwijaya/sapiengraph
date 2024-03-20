@@ -298,3 +298,16 @@ ul.timeline > li.hlight:before {
   height: 20px;
   z-index: 400;
 }
+
+/* Remove the timeline line for the sixth step */
+ul.timeline > li:nth-child(5):after {
+  content: ' ';
+  background: #ffffff;
+  display: inline-block;
+  margin-top: 60px;
+  position: absolute;
+  left: 9px;
+  width: 10px;
+  height: 15%;
+  z-index: 400;
+}
