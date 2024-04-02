@@ -226,7 +226,7 @@
   padding-top: 0.8rem !important; /* Adjust padding as needed */
   padding-bottom: 0.8rem !important;
   padding-right: 0.8rem !important;
-  font-weight: bold !important;
+  font-weight: 900 !important;
   line-height: 1.1rem !important;
   text-wrap: nowrap !important;
 
@@ -323,3 +323,6 @@ ul.timeline > li:nth-child(5):after {
   color: #fff !important;
 }
 
+.custom-link:hover{
+  color: #42BA96 !important;
+}
