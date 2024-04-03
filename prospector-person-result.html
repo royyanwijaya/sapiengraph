@@ -110,7 +110,7 @@
       <div class="row mb-2 mb-md-6 align-items-center justify-content-between">
         <div class="pl-6 pl-md-9 col-6 h1 font-weight-bold">Person Prospector</div>
         <div class="ml-auto pr-6 pr-md-9">
-          <div class="btn btn-xs btn-success-soft btn-pill mt-n3">
+          <div class="btn btn-sm btn-success-soft btn-pill mt-n3">
             <i class="neu neu-so-save"></i>Save search
           </div>
         </div>
@@ -291,15 +291,18 @@
             <div class="row">
               <div class="col-12 col-md-6"><P class="font-weight-bold mb-5 mt-2"><i class="neu neu-so-structure mr-1 text-success"></i>2,345,678 <span class="font-weight-normal text-muted">results found</span></P></div>
               <div class="col-12 col-md-6 d-none d-md-block d-md-flex justify-content-end">
-                <P class="font-weight-bold text-muted mb-5 mt-2 small text-right mr-4">Displaying 1-10 results</P>
-                <ul class="pagination pagination-sm">
-                  <li class="page-item disabled">
-                    <a class="page-link py-1 pt-2 px-2" href="#" tabindex="-1"><i class="fe fe-chevron-left"></i></a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link py-1 pt-2 px-2" href="#"><i class="fe fe-chevron-right"></i></a>
-                  </li>
-                </ul>
+                <div class="font-weight-bold text-muted mb-5 small text-right">Displaying 
+                  <div class="btn-group ml-2">
+                    <button type="button" class="btn btn-xs btn-pill px-3 btn-success-soft dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      10 results
+                    </button>
+                    <div class="dropdown-menu mr-10">
+                      <a class="dropdown-item nav-link ml-auto" href="#">15 results</a>
+                      <a class="dropdown-item nav-link ml-auto" href="#">20 results</a>
+                      <a class="dropdown-item nav-link ml-auto" href="#">25 results</a>
+                    </div>
+                  </div>
+                  </div>
                 </nav>
               </div>
             </div>
@@ -565,8 +568,8 @@
                 <button class="btn btn-success-soft btn-block btn-pill lift mr-3 mb-3 mb-md-0 d-sm-none"><i class="neu neu-document-ui"></i> Unlock this page</button>
 
                 <!-- unlock selected-->
-                <button class="btn btn-success-soft btn-sm btn-pill lift d-none d-sm-block text-nowrap"><i class="neu neu-todo-done"></i> Unlock selected row</button>
-                <button class="btn btn-success-soft btn-block btn-pill lift d-sm-none"><i class="neu neu-todo-done"></i> Unlock selected row</button>                
+                <button class="btn btn-success-soft btn-sm btn-pill lift d-none d-sm-block text-nowrap"><i class="neu neu-todo-done"></i> Unlock 3 selected row</button>
+                <button class="btn btn-success-soft btn-block btn-pill lift d-sm-none"><i class="neu neu-todo-done"></i> Unlock 3 selected row</button>                
               </div>
         
               <!-- PAGINATION-->
