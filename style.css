@@ -89,7 +89,7 @@
 }
 
 .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
-  background-color: #C8FFC8; 
+  background-color: #C8FFC8 !important; 
 }
 
 .logo {
@@ -217,7 +217,7 @@
 .custom-table th,
 .custom-table td {
   padding-left: 1.3rem !important;
-  padding-top: 1.1rem !important;
+  padding-top: 1.2rem !important;
   padding-bottom: 1rem !important;
 }
 
