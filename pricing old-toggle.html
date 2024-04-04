@@ -138,18 +138,21 @@
         <div class="row">
           <div class="col-12">
 
-            <div class="text-center lead mb-4 mb-md-6">
-              <a class="text-muted" href="#">
-                Monthly plans
-              </a>
-              /
-              <a class="text-muted" href="#">Annual plans, billed monthly</a>
-              /
-              <a class="text-success font-weight-bold" href="#" data-toggle="tooltip" data-placement="right" title="All 12+2 months credits, formulas and fresh profiles issued at one go immediately upon subscription of a plan">Annual plans, billed annually
-                <span class="text-opacity-80">
-                  Annual <span class="badge badge-warning h6 rounded-pill text-uppercase ml-1">+ EXTRA 2 FREE MONTHS <i class="fe fe-info small"></i></span>
-                </span>
-              </a>
+            <div class="d-flex justify-content-center mb-4 mb-md-6">
+
+              <span class="text-opacity-80">
+                Monthly
+              </span>
+    
+              <div class="custom-control custom-switch mx-3">
+                <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price" checked>
+                <label class="custom-control-label" for="billingSwitch"></label>
+              </div>
+    
+              <span class="text-opacity-80">
+                Annual <span class="badge badge-warning h6 rounded-pill text-uppercase ml-1">+2 months free credits</span>
+              </span>
+    
             </div>
 
             <div class="row justify-content-center no-gutters">
@@ -218,7 +221,7 @@
                   </p>
  
                   <div class="contentToHide text-white no-select">
-                    <span class="font-weight-bold text-info">$588/yr</span>
+                    <del class="text-muted">$588</del> <span class="font-weight-bold text-info">$480/yr</span>
                   </div>
                 
                   <h3 class="display-3 font-weight-bold mb-0">
@@ -226,7 +229,7 @@
                   </h3>
                   
                   <p class="small text-muted billed mb-2">
-                    /yr, billed annually
+                    /mo, billed annually
                   </p>
 
                   <div class="pb-6 mb-5 border-200 mt-4">
@@ -310,7 +313,7 @@
                   </h3>
                   
                   <p class="small text-muted billed mb-2">
-                    /yr, billed annually
+                    /mo, billed annually
                   </p>
 
                   <div class="pb-6 mb-5 border-200 mt-4">
@@ -394,7 +397,7 @@
                   </h3>
                   
                   <p class="small text-muted billed mb-2">
-                    /yr, billed annually
+                    /mo, billed annually
                   </p>
 
                   <div class="pb-6 mb-5 border-200 mt-4">
@@ -478,7 +481,7 @@
                   </h3>
                   
                   <p class="small text-muted billed mb-2">
-                    /yr, billed annually
+                    /mo, billed annually
                   </p>
 
                   <div class="pb-6 mb-5 border-200 mt-4">
@@ -612,221 +615,221 @@
   
     </section>
   
-    <!-- FAQ -->
-    <section class="bg-white pt-8 pt-md-9 pb-6 pb-md-8 border-bottom">
-      <div class="container">
-  
-        <div class="row">
-          <div class="col-12 pb-6">
-            <h2 class="text-center"> FAQ</h2>
-          </div>
-        </div> <!-- row-->
-  
-        <div class="row justify-content-center pb-8">
-          <div class="col-12">
-  
-            <!-- card-->
-            <div class="card accordion" id="faqAccordion">
-              <div class="card-body shadow-light-lg">
-  
-                <!-- list group-->
-                <div class="list-group list-group-flush">
-  
-                  <!-- list group item 1-->
-                  <div class="list-group-item">
-  
-                    <!-- toggle-->
-                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqOne" role="button" aria-expanded="false" aria-controls="faqOne">
-                    
-                    <div class="mr-auto">
-  
-                    <!-- title-->
-                    <p class="font-weight-bold">
-                      Does my credits expire?
-                    </p>
-  
-                    </div>
-  
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
-  
-                    </a> <!-- toggle-->
-  
-                    <!-- collapse-->
-                    <div class="collapse" id="faqOne" data-parent="#faqAccordion">
-                      <div class="pt-2">
-                        <p class="text-muted">
-                          Your credits will expire at the end of each billing cycle, either every month or every year depending on your plan.
-                        </p>
-                        <ul class="text-muted">
-                          <li>
-                            Monthly plans: credits expire every month
-                          </li>
-                          <li>
-                            Annual plans, billed monthly: credits expire every month
-                          </li>
-                          <li>
-                            Annual plans, billed annually: credits expire every year
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-  
-                  </div> <!-- list group item-->
-  
-                  <!-- list group item 2-->
-                  <div class="list-group-item">
-  
-                    <!-- toggle-->
-                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqTwo" role="button" aria-expanded="false" aria-controls="faqOne">
-                    
-                    <div class="mr-auto">
-  
-                    <!-- title-->
-                    <p class="font-weight-bold">
-                      What if I run out of credits?
-                    </p>
-  
-                    </div>
-  
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
-  
-                    </a> <!-- toggle-->
-  
-                    <!-- collapse-->
-                    <div class="collapse" id="faqTwo" data-parent="#faqAccordion">
-                      <div class="pt-2">
-                      <p class="text-muted">
-                        You can upgrade to the next higher plan and get additional credits. Plan upgrades are immediate. If no higher tiered plans are available, please email us at <a class="text-success font-weight-bold" href="mailto:hello@sapiengraph.com">hello@sapiengraph.com</a> so we can assist you with a custom Enterprise plan.
-                      </p>
-                      </div>
-                    </div>
-  
-                  </div> <!-- list group item-->   
+  <!-- FAQ -->
+  <section class="bg-white pt-8 pt-md-9 pb-6 pb-md-8 border-bottom">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 pb-6">
+          <h2 class="text-center"> FAQ</h2>
+        </div>
+      </div> <!-- row-->
+
+      <div class="row justify-content-center pb-8">
+        <div class="col-12">
+
+          <!-- card-->
+          <div class="card accordion" id="faqAccordion">
+            <div class="card-body shadow-light-lg">
+
+              <!-- list group-->
+              <div class="list-group list-group-flush">
+
+                <!-- list group item 1-->
+                <div class="list-group-item">
+
+                  <!-- toggle-->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
+                  href="#faqOne" role="button" aria-expanded="false" aria-controls="faqOne">
                   
-                  <!-- list group item 3-->
-                  <div class="list-group-item">
-  
-                    <!-- toggle-->
-                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqThree" role="button" aria-expanded="false" aria-controls="faqThree">
-                    
-                    <div class="mr-auto">
-  
-                    <!-- title-->
-                    <p class="font-weight-bold">
-                      What happen when I cancel my subscription plan?
-                    </p>
-  
-                    </div>
-  
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
-  
-                    </a> <!-- toggle-->
-  
-                    <!-- collapse-->
-                    <div class="collapse" id="faqThree" data-parent="#faqAccordion">
-                      <div class="pt-2">
+                  <div class="mr-auto">
+
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    Does my credits expire?
+                  </p>
+
+                  </div>
+
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
+
+                  </a> <!-- toggle-->
+
+                  <!-- collapse-->
+                  <div class="collapse" id="faqOne" data-parent="#faqAccordion">
+                    <div class="pt-2">
                       <p class="text-muted">
-                        You will not be charged in the next billing cycle. You can keep your credits and the benefits of your subscription plan until the end of the billing cycle. At the end of the current billing cycle, your existing credits will expire.<br>
-                        <br>
-                        For monthly plans, you will not be charged next month. Your credits and benefits can still be used until the last day of your monthly plan.<br>
-                        <br>
-                        For annual plans, you will not be charged after the end of the twelve months. Your credits and benefits can still be used until the end of the twelve months.
+                        Your credits will expire at the end of each billing cycle, either every month or every year depending on your plan.
                       </p>
-                      </div>
+                      <ul class="text-muted">
+                        <li>
+                          Monthly plans: credits expire every month
+                        </li>
+                        <li>
+                          Annual plans, billed monthly: credits expire every month
+                        </li>
+                        <li>
+                          Annual plans, billed annually: credits expire every year
+                        </li>
+                      </ul>
                     </div>
-  
-                  </div> <!-- list group item-->     
+                  </div>
+
+                </div> <!-- list group item-->
+
+                <!-- list group item 2-->
+                <div class="list-group-item">
+
+                  <!-- toggle-->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
+                  href="#faqTwo" role="button" aria-expanded="false" aria-controls="faqOne">
                   
-                  <!-- list group item 4-->
-                  <div class="list-group-item">
-  
-                    <!-- toggle-->
-                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqFour" role="button" aria-expanded="false" aria-controls="faqFour">
-                    
-                    <div class="mr-auto">
-  
-                    <!-- title-->
-                    <p class="font-weight-bold">
-                      How do I upgrade or downgrade my plan?
+                  <div class="mr-auto">
+
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    What if I run out of credits?
+                  </p>
+
+                  </div>
+
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
+
+                  </a> <!-- toggle-->
+
+                  <!-- collapse-->
+                  <div class="collapse" id="faqTwo" data-parent="#faqAccordion">
+                    <div class="pt-2">
+                    <p class="text-muted">
+                      You can upgrade to the next higher plan and get additional credits. Plan upgrades are immediate. If no higher tiered plans are available, please email us at <a class="text-success font-weight-bold" href="mailto:hello@sapiengraph.com">hello@sapiengraph.com</a> so we can assist you with a custom Enterprise plan.
                     </p>
-  
                     </div>
-  
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
-  
-                    </a> <!-- toggle-->
-  
-                    <!-- collapse-->
-                    <div class="collapse" id="faqFour" data-parent="#faqAccordion">
-                      <div class="pt-2">
-                      <p class="text-muted">
-                        You can initiate a plan change only at the end of your plan subscription period, for monthly plans - after a month, for annual plans - after a year. Once the subscription period ends, you can initiate a plan change between annual and monthly plans, and between the different tiers of plans.
-                      </p>
-                      </div>
-                    </div>
-  
-                  </div> <!-- list group item--> 
+                  </div>
+
+                </div> <!-- list group item-->   
+                
+                <!-- list group item 3-->
+                <div class="list-group-item">
+
+                  <!-- toggle-->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
+                  href="#faqThree" role="button" aria-expanded="false" aria-controls="faqThree">
                   
-                  <!-- list group item 4-->
-                  <div class="list-group-item">
-  
-                    <!-- toggle-->
-                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqFive" role="button" aria-expanded="false" aria-controls="faqFive">
-                    
-                    <div class="mr-auto">
-  
-                    <!-- title-->
-                    <p class="font-weight-bold">
-                      What is your refund policy?
+                  <div class="mr-auto">
+
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    What happen when I cancel my subscription plan?
+                  </p>
+
+                  </div>
+
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
+
+                  </a> <!-- toggle-->
+
+                  <!-- collapse-->
+                  <div class="collapse" id="faqThree" data-parent="#faqAccordion">
+                    <div class="pt-2">
+                    <p class="text-muted">
+                      You will not be charged in the next billing cycle. You can keep your credits and the benefits of your subscription plan until the end of the billing cycle. At the end of the current billing cycle, your existing credits will expire.<br>
+                      <br>
+                      For monthly plans, you will not be charged next month. Your credits and benefits can still be used until the last day of your monthly plan.<br>
+                      <br>
+                      For annual plans, you will not be charged after the end of the twelve months. Your credits and benefits can still be used until the end of the twelve months.
                     </p>
-  
                     </div>
-  
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
-  
-                    </a> <!-- toggle-->
-  
-                    <!-- collapse-->
-                    <div class="collapse" id="faqFive" data-parent="#faqAccordion">
-                      <div class="pt-2">
-                      <p class="text-muted">
-                        See <a class="text-success font-weight-bold" href="https://sapiengraph.com/blog/whats-sapiengraphs-refund-policy/">What's Sapiengraph's refund policy?</a>
-                      </p>
-                      </div>
+                  </div>
+
+                </div> <!-- list group item-->     
+                
+                <!-- list group item 4-->
+                <div class="list-group-item">
+
+                  <!-- toggle-->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
+                  href="#faqFour" role="button" aria-expanded="false" aria-controls="faqFour">
+                  
+                  <div class="mr-auto">
+
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    How do I upgrade or downgrade my plan?
+                  </p>
+
+                  </div>
+
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
+
+                  </a> <!-- toggle-->
+
+                  <!-- collapse-->
+                  <div class="collapse" id="faqFour" data-parent="#faqAccordion">
+                    <div class="pt-2">
+                    <p class="text-muted">
+                      You can initiate a plan change only at the end of your plan subscription period, for monthly plans - after a month, for annual plans - after a year. Once the subscription period ends, you can initiate a plan change between annual and monthly plans, and between the different tiers of plans.
+                    </p>
                     </div>
-  
-                  </div> <!-- list group item-->
-  
-                </div> <!-- list group-->
-  
-              </div> <!-- card-body-->
-  
-            </div>  <!-- card accordion-->
-          </div> <!-- col-->
-        </div> <!-- row-->
-        
-      </div> <!-- container-->
-    </section> <!-- FAQ-->
+                  </div>
+
+                </div> <!-- list group item--> 
+                
+                <!-- list group item 4-->
+                <div class="list-group-item">
+
+                  <!-- toggle-->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
+                  href="#faqFive" role="button" aria-expanded="false" aria-controls="faqFive">
+                  
+                  <div class="mr-auto">
+
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    What is your refund policy?
+                  </p>
+
+                  </div>
+
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
+
+                  </a> <!-- toggle-->
+
+                  <!-- collapse-->
+                  <div class="collapse" id="faqFive" data-parent="#faqAccordion">
+                    <div class="pt-2">
+                    <p class="text-muted">
+                      See <a class="text-success font-weight-bold" href="https://sapiengraph.com/blog/whats-sapiengraphs-refund-policy/">What's Sapiengraph's refund policy?</a>
+                    </p>
+                    </div>
+                  </div>
+
+                </div> <!-- list group item-->
+
+              </div> <!-- list group-->
+
+            </div> <!-- card-body-->
+
+          </div>  <!-- card accordion-->
+        </div> <!-- col-->
+      </div> <!-- row-->
+      
+    </div> <!-- container-->
+  </section> <!-- FAQ-->
 
     <!-- COMPLIANCE
     ================================================== -->
