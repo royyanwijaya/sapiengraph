@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+  <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+  <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+  <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Map -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Search People/Companies/Customers. Get Contact. Export results to Excel</title>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR
+    ================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/Sapiengraph logo.svg" class="navbar-brand-img" alt="Sapiengraph logo">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
+        </button>
+
+        <!-- Navigation -->
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">
+              Pricing
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#!">
+              Documentation
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Button -->
+
+        <div class="text-center ml-auto">
+          <!-- Button -->
+          <a class="btn btn-sm btn-link font-weight-bold text-white text-md-gray" href="signin-illustration.html">
+            Sign in
+          </a>
+
+          <a class="navbar-btn btn btn-pill btn-sm btn-white text-success text-md-gray lift ml-auto shadow-light-lg"
+            href="#!" target="_blank">
+            Set up new account
+          </a>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- FIRST FOLD
+    ================================================== -->
+  <section class="py-8 py-md-11">
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-12 text-center">
+
+          <!-- Headin -->
+          <h1 class="display-3 font-weight-bolder" data-aos="fade-up">
+            Search People/Companies/Customers. Get Contact. <span class="text-success">Export results to Excel</span>
+          </h1>
+
+          <!-- Text -->
+          <p class="lead text-muted mb-8 mx-md-11" data-aos="fade-up" data-aos-delay="50">
+            <span class="font-weight-bold text-black">Sapiengraph's Prospector</span> is what you wish Sales Navigator is. Build a list of prospects with rich data relevant to your business needs, such as customer data. We will then pair prospects of interest with contact information and a decision maker (if relevant), and allow you to export these data to Excel or Google Sheets.
+          </p>
+
+        </div>
+
+        <div class="col-12 text-center">
+          <img class="img-fluid rounded" alt="..." src="Illustration_landscape_placement.png">
+          <a href="#!" class="btn btn-success lift mt-8">
+            Play with Prospector in the Dashboard
+          </a>
+        </div>
+
+      </div> <!-- / .row -->
+
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- USE CASES
+    ================================================== -->
+  <section class="border-bottom jarallax" data-jarallax data-speed=".6" style="background-image: url(assets/img/photos/background/imagery-anna-blur.png);">
+    <div class="container pt-8 pt-md-11 pb-8 pb-md-11">
+
+      <div class="card shadow-dark-lg aos-init aos-animate" data-aos="fade-up">
+        <div class="card-body rounded">
+            
+          <div class="row justify-content-between">
+
+          <div class="col-12 col-md-5 order-md-2 mb-6 mb-md-0">
+          
+            <!-- Badge -->
+            <span class="badge badge-info rounded-pill badge-lg badge-float badge-float-outside text-uppercase mt-n1 mr-3">
+              Sapiengraph use-case Story
+            </span>
+          
+            <!-- Image -->
+            <img class="img-fluid rounded mb-2 d-none d-md-block" src="assets/img/photos/imagery-anna.png">
+          
+            <!-- Image mobile-->
+            <img class="img-fluid rounded d-block d-md-none" src="assets/img/photos/imagery-anna-mobile.png">
+          
+          </div>
+
+          <div class="col-12 col-md-7 order-md-1 pr-8">
+
+            <div class="d-block">
+
+            <!-- Image -->
+            <img class="img-fluid rounded mr-4 mb-5" alt="agicap logo" style="width: 128px;" src="assets/img/Sapiengraph logo.svg">            
+
+            <!-- Title 1-->
+            <h2 class="h2 font-weight-bold mb-4">
+              Executive Search agencies export lists of talents with personal emails for their clients in <span class="text-success font-weight-bold">no more than 5 minutes</span>.
+            </h2>
+
+            <!-- Desc-->
+            <p class="font-size-lg text-muted mb-5"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <!-- Link to blog-->
+            <a class="font-size-lg text-success font-weight-bold" href="#!"> 
+              Read Story <i class="fe fe-arrow-right"></i>
+            </a>
+
+            </div>
+
+          </div> <!-- Banner story 1-->
+
+          </div> <!-- / .row company and general-->          
+        </div> <!-- / .card-body-->
+      </div> <!-- BANNER STORY-->
+
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- ADVANCED PROSPECT SEARCH
+    ================================================== -->
+  <section class="py-8 py-md-11">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12 col-md-6">
+
+          <h2 class="display-2 font-weight-bold">
+            Advanced Prospect Search
+          </h2>
+    
+          <p class="text-muted lead mb-8">
+            Search precisely with 44 filters and boolean Search to identify prospects across 500M+ people and companies
+          </p>
+
+          <a class="btn btn-success lift" href="#!">
+            Play with Prospector in the Dashboard
+          </a>
+
+        </div>
+
+        <div class="col-12 col-md-6">
+
+          <img class="img-fluid rounded" alt="wleo" src="Illustration_landscape_placement.png">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- USE CASES
+    ================================================== -->
+  <section class="border-bottom jarallax" data-jarallax data-speed=".6" style="background-image: url(assets/img/photos/background/imagery-docean-blur.png);">
+    <div class="container pt-8 pt-md-11 pb-8 pb-md-11">
+
+      <div class="card shadow-dark-lg aos-init aos-animate" data-aos="fade-up">
+        <div class="card-body rounded">
+            
+          <div class="row justify-content-between">
+
+          <div class="col-12 col-md-5 order-md-2 mb-6 mb-md-0">
+          
+            <!-- Badge -->
+            <span class="badge badge-info rounded-pill badge-lg badge-float badge-float-outside text-uppercase mt-n1 mr-3">
+              Sapiengraph use-case Story
+            </span>
+          
+            <!-- Image -->
+            <img class="img-fluid rounded mb-2 d-none d-md-block" src="assets/img/photos/imagery-docean.png">
+          
+            <!-- Image mobile-->
+            <img class="img-fluid rounded d-block d-md-none" src="assets/img/photos/imagery-docean-mobile.png">
+          
+          </div>
+
+          <div class="col-12 col-md-7 order-md-1 pr-8">
+
+            <div class="d-block">
+
+            <!-- Image -->
+            <img class="img-fluid rounded mr-4 mb-5" alt="ramp.com logo" style="width: 96px;" src="assets/img/brands/Ramp-logo-yellow.png">            
+
+            <!-- Title 1-->
+            <h2 class="h2 font-weight-bold mb-4">
+              Ramp used Sapiengraph's data to build an exhaustive list of ICPs for your BDRs
+            </h2>
+
+            <!-- Desc-->
+            <p class="font-size-lg text-muted mb-5"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <!-- Link to blog-->
+            <a class="font-size-lg text-success font-weight-bold" href="#!"> 
+              Read Story <i class="fe fe-arrow-right"></i>
+            </a>
+
+            </div>
+
+          </div> <!-- Banner story 1-->
+
+          </div> <!-- / .row company and general-->          
+        </div> <!-- / .card-body-->
+      </div> <!-- BANNER STORY-->
+
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- FOOTER 
+    ================================================== -->
+  <footer class="py-8 py-md-12 bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+
+          <!-- Brand -->
+          <img src="./assets/img/Sapiengraph logo footer.svg" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Sapiengraph
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="index.html" class="text-reset">
+                Home
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Blog
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#pricing" class="text-reset">
+                Pricing
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="terms-of-use.html" class="text-reset">
+                Terms of use
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            API
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Documentation
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Company
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="https://nubela.co" class="text-reset">
+                Nubela Pte Ltd
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="team.html" class="text-reset">
+                Our Team
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://nubela.co" class="text-reset">
+                Other Projects by Nubela
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Help
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="mailto:hello@proxycurl.com" class="text-reset">
+                Email us
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div> <!-- / .row -->
+      <br>
+
+      <hr class="border-dark">
+      <br>
+
+      <div class="text-center">
+        <p class="text-muted caption">Nubela Pte Ltd. All rights reserved.</p>
+      </div>
+
+    </div> <!-- / .container -->
+  </footer>
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  <!-- Libs JS -->
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="./assets/libs/aos/dist/aos.js"></script>
+  <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+  <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+  <script src="./assets/libs/quill/dist/quill.min.js"></script>
+  <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+  <!-- Map -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- Content Change JS-->
+  <script>
+    // Function to show content by default
+    function showDefaultContent() {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(content => {
+        if (content.id === 'hrContent') {
+          content.style.display = 'block';
+        } else {
+          content.style.display = 'none';
+        }
+      });
+    }
+
+    // Show HR content by default when the page loads
+    document.addEventListener('DOMContentLoaded', showDefaultContent);
+
+    // Function to switch content on button click
+    function showContent(contentId) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(content => {
+        if (content.id === contentId) {
+          content.style.display = 'block';
+        } else {
+          content.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  <script>
+    function showContent(contentId, button) {
+      const contents = document.querySelectorAll('.content');
+      const buttons = document.querySelectorAll('.btn');
+
+      contents.forEach(content => {
+        content.style.display = 'none';
+      });
+
+      buttons.forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      document.getElementById(contentId).style.display = 'block';
+      button.classList.add('active');
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      function showContent(contentId, button) {
+        $('.content').fadeOut(0); // Fade out all content elements
+        $('#' + contentId).fadeIn(600); // Fade in the content associated with the clicked button
+
+        $('.btn').removeClass('active'); // Remove 'active' class from all buttons
+        $(button).addClass('active'); // Add 'active' class to the clicked button
+      }
+
+      $('#btnHR').on('click', function () {
+        showContent('hrContent', this);
+      });
+
+      $('#btnVC').on('click', function () {
+        showContent('vcContent', this);
+      });
+
+      $('#btnSales').on('click', function () {
+        showContent('salesContent', this);
+      });
+    });
+  </script>
+
+  <!-- Content switching HR,VCs,Sales-->
+  <script>
+    $(document).ready(function () {
+      var currentContent = 1; // Track the current content being displayed
+      var interval; // Variable to hold the interval
+
+      // Function to toggle between contents with smooth transition
+      function toggleContent() {
+        if (currentContent === 1) {
+          $('#hrContent1').fadeOut(300, function () {
+            $('#hrContent2').fadeIn(300);
+          });
+          currentContent = 2;
+        } else {
+          $('#hrContent2').fadeOut(300, function () {
+            $('#hrContent1').fadeIn(300);
+          });
+          currentContent = 1;
+        }
+      }
+
+      // Set interval to automatically change content every 5 seconds (5000 milliseconds)
+      interval = setInterval(toggleContent, 10000);
+
+      // Function to handle hover events
+      $('.content-section').hover(
+        function () {
+          clearInterval(interval); // Pause content switching on hover
+        },
+        function () {
+          interval = setInterval(toggleContent, 10000); // Resume content switching when hover ends
+        }
+      );
+
+      // Click event for previous button
+      $('#prevButton').on('click', function () {
+        clearInterval(interval); // Stop the interval
+        toggleContent();
+        interval = setInterval(toggleContent, 10000); // Restart the interval after manual interaction
+      });
+
+      // Click event for next button
+      $('#nextButton').on('click', function () {
+        clearInterval(interval); // Stop the interval
+        toggleContent();
+        interval = setInterval(toggleContent, 10000); // Restart the interval after manual interaction
+      });
+    });
+  </script> <!-- HR-->
+
+  <script>
+    $(document).ready(function () {
+      var currentContent = 1; // Track the current content being displayed
+      var interval; // Variable to hold the interval
+
+      // Function to toggle between contents with smooth transition
+      function toggleContent() {
+        if (currentContent === 1) {
+          $('#vcContent1').fadeOut(300, function () {
+            $('#vcContent2').fadeIn(300);
+          });
+          currentContent = 2;
+        } else {
+          $('#vcContent2').fadeOut(300, function () {
+            $('#vcContent1').fadeIn(300);
+          });
+          currentContent = 1;
+        }
+      }
+
+      // Set interval to automatically change content every 5 seconds (5000 milliseconds)
+      interval = setInterval(toggleContent, 10000);
+
+      // Function to handle hover events
+      $('.content-section').hover(
+        function () {
+          clearInterval(interval); // Pause content switching on hover
+        },
+        function () {
+          interval = setInterval(toggleContent, 10000); // Resume content switching when hover ends
+        }
+      );
+
+      // Click event for previous button
+      $('#prevButton').on('click', function () {
+        clearInterval(interval); // Stop the interval
+        toggleContent();
+        interval = setInterval(toggleContent, 10000); // Restart the interval after manual interaction
+      });
+
+      // Click event for next button
+      $('#nextButton').on('click', function () {
+        clearInterval(interval); // Stop the interval
+        toggleContent();
+        interval = setInterval(toggleContent, 10000); // Restart the interval after manual interaction
+      });
+    });
+  </script> <!-- VC-->
+
+  <script>
+    $(document).ready(function () {
+      var currentContent = 1; // Track the current content being displayed
+      var interval; // Variable to hold the interval
+
+      // Function to toggle between contents with smooth transition
+      function toggleContent() {
+        if (currentContent === 1) {
+          $('#salesContent1').fadeOut(300, function () {
+            $('#salesContent2').fadeIn(300);
+          });
+          currentContent = 2;
+        } else {
+          $('#salesContent2').fadeOut(300, function () {
+            $('#salesContent1').fadeIn(300);
+          });
+          currentContent = 1;
+        }
+      }
+
+      // Set interval to automatically change content every 5 seconds (5000 milliseconds)
+      interval = setInterval(toggleContent, 10000);
+
+      // Function to handle hover events
+      $('.content-section').hover(
+        function () {
+          clearInterval(interval); // Pause content switching on hover
+        },
+        function () {
+          interval = setInterval(toggleContent, 10000); // Resume content switching when hover ends
+        }
+      );
+
+      // Click event for previous button
+      $('#prevButton').on('click', function () {
+        clearInterval(interval); // Stop the interval
+        toggleContent();
+        interval = setInterval(toggleContent, 10000); // Restart the interval after manual interaction
+      });
+
+      // Click event for next button
+      $('#nextButton').on('click', function () {
+        clearInterval(interval); // Stop the interval
+        toggleContent();
+        interval = setInterval(toggleContent, 10000); // Restart the interval after manual interaction
+      });
+    });
+  </script> <!-- Sales-->
+
+</body>
+
+</html>
