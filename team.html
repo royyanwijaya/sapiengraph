@@ -33,57 +33,137 @@
 
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container-fluid">
+  
         <!-- Brand -->
         <a class="navbar-brand" href="./index.html">
           <img src="./assets/img/Sapiengraph logo.svg" class="navbar-brand-img" alt="Sapiengraph logo">
         </a>
-
+  
         <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+  
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-
+  
           <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fe fe-x"></i>
           </button>
-
+  
           <!-- Navigation -->
           <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                Home
+          
+            <li class="dropdown nav-item">
+              <a class="dropdown-toggle nav-link" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Products <i class="fe fe-chevron-down"></i>
               </a>
+
+              <div class="dropdown-menu pb-4" aria-labelledby="navbarSolutions">
+
+                <div class="row justify-content-center">
+
+                  <div class="col-12">
+
+                    <div class="border border-success px-4 py-4 rounded" style="background-color: #ecfdf5;">
+                      <h2 class="h5 text-uppercase font-weight-bold text-success mb-1">
+                        <svg class="d-inline-flex mb-2" xmlns="http://www.w3.org/2000/svg" width="20" height="auto" viewBox="0 0 24 24"><g fill="currentColor"><path d="m7.303 13.51 2.83-1.415a4.4 4.4 0 0 0 1.962-1.962l1.414-2.83a.548.548 0 0 1 .981 0l1.415 2.83a4.4 4.4 0 0 0 1.962 1.962l2.83 1.414a.548.548 0 0 1 0 .981l-2.83 1.415a4.4 4.4 0 0 0-1.962 1.962l-1.414 2.83a.548.548 0 0 1-.982 0l-1.414-2.83a4.4 4.4 0 0 0-1.962-1.962l-2.83-1.414a.548.548 0 0 1 0-.981m.354-6.693L8.87 6.21a.235.235 0 0 0 0-.42l-1.213-.606a1.88 1.88 0 0 1-.84-.841L6.21 3.13a.235.235 0 0 0-.42 0l-.607 1.213a1.88 1.88 0 0 1-.84.84L3.13 5.79a.235.235 0 0 0 0 .42l1.213.607c.363.182.658.477.84.84L5.79 8.87a.235.235 0 0 0 .42 0l.606-1.212a1.88 1.88 0 0 1 .841-.841"></path></g></svg>
+                        5-Minute Growth Tools
+                      </h2>
+  
+                      <div class="dropdown-item">
+                        <a class="dropdown-link" href="#">
+                          B2B Enrichment for Excel / Google Sheets
+                        </a>
+                      </div>
+  
+                      <div class="dropdown-item">
+                        <a class="dropdown-link pl-4" href="#">
+                          ᴸ Formula Documentation
+                        </a>
+                      </div>
+  
+                      <div class="dropdown-item">
+                        <a class="dropdown-link" href="#">
+                          Prospector with Export
+                        </a>
+                      </div>
+  
+                      <div class="dropdown-item">
+                        <a class="dropdown-link" href="#">
+                          Job Change Monitor <span class="text-success font-weight-bold">(FREE)</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="dropdown-item mt-4">
+                      <a class="dropdown-link" href="#">
+                        Spreadsheet Template Gallery <span class="text-success font-weight-bold">(FREE)</span>
+                      </a>
+                    </div>
+
+                    <div class="dropdown-item mt-2 mb-0">
+                      <a class="dropdown-link" href="#">
+                        API
+                        <svg class="d-inline-flex mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="auto" viewBox="0 0 24 24"><g fill="currentColor"><path d="M14.25 15v-4.189l-4.61 4.61a.75.75 0 0 1-1.06 0 .75.75 0 0 1 0-1.06l4.61-4.611H9a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0"></path></g></svg>
+                      </a>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="#">
+                Solutions
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">
                 Pricing
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#!">
-                Documentation
+              <a class="nav-link" href="blog.html">
+                Blog
               </a>
             </li>
-
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#!">
+                FAQ
+              </a>
+            </li>
+  
           </ul>
-
+  
           <!-- Button -->
-          <a class="navbar-btn text-uppercase btn btn-sm btn-success lift ml-auto" href="#!" target="_blank">
-            Get an invite
-          </a>
-
+  
+          <div class="text-center ml-auto">
+            <!-- Button -->
+            <a class="btn btn-sm btn-link font-weight-bold text-white text-md-gray" href="signin-illustration.html">
+              Sign in
+            </a>
+  
+            <a class="navbar-btn btn btn-pill btn-sm btn-white text-success text-md-gray lift ml-auto shadow-light-lg"
+              href="#!" target="_blank">
+              Set up new account
+            </a>
+  
+          </div>
+  
         </div>
-
+  
       </div>
     </nav>
 
