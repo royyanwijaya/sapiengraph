@@ -335,3 +335,7 @@ ul.timeline > li:nth-child(5):after {
 .custom-link:hover{
   color: #42BA96 !important;
 }
+
+.dropdown-item:hover{
+  color: #42BA96 !important;
+}
