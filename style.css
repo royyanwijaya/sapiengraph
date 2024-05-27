@@ -339,7 +339,3 @@ ul.timeline > li:nth-child(5):after {
 .dropdown-item:hover{
   color: #42BA96 !important;
 }
-
-.bg-success-darker{
-  background-color: #389E7F;
-}
