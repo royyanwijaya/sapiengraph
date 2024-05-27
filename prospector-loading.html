@@ -313,6 +313,15 @@
                                           <label for="exampleInputCompany" class="font-weight-bold">Current company</label>
   
                                           <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft" id="exampleInputCompany" aria-describedby="emailHelp">
+                                          
+                                          <div class="mt-2">
+                                            <div class="btn rounded-pill btn-xs btn-outline-success me-1 ps-3 mt-2">
+                                              microsoft <i class="neu neu-so-close-circle ms-1"></i>
+                                            </div>
+                                            <div class="btn rounded-pill btn-xs btn-outline-success me-1 ps-3 mt-2">
+                                              apple <i class="neu neu-so-close-circle ms-1"></i>
+                                            </div>
+                                          </div>
   
                                         </div>
   
@@ -348,6 +357,12 @@
   
                                           <input type="text" class="form-control form-control-sm" placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany" aria-describedby="emailHelp">
   
+                                          <div class="mt-2">
+                                            <div class="btn rounded-pill btn-xs btn-outline-success me-1 ps-3 mt-2">
+                                              singapore <i class="neu neu-so-close-circle ms-1"></i>
+                                            </div>
+                                          </div>
+  
                                         </div>
   
                                       </form>
@@ -371,7 +386,7 @@
                             <div class="g-recaptcha mb-5 d-inline-block" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" style="transform-origin: 0 0;"></div>
                           </div>
 
-                          <a class="btn btn-sm btn-outline-success btn-pill w-100" href="prospector-loading.html">
+                          <a class="btn btn-sm btn-outline-success btn-pill w-100" href="prospector-results.html">
                             <i class="neu-search"></i> Search criteria
                           </a>
                       
@@ -380,20 +395,21 @@
                       </div>
     
                       <div class="col-12 col-lg-8 pl-lg-2">
-                        <div class="card card-body custom-rounded bg-white border text-center">
+                        <div class="card card-body custom-rounded bg-white border text-center py-md-15">
 
-                          <img class="img-fluid" width="512" height="auto" alt="prospector search illustration" src="assets/img/illustrations/prospector-search.png">
-                      
-                          <p class="lead" style="color: #cbd5e1;">
-                            Filter and search your criteria to show the result
-                          </p>
+                          <div id="spinnerContainer" class="d-flex justify-content-center pt-6 pb-6 pt-md-8 pb-md-8">
+                            <div id="spinner1" class="spinner-grow text-success me-2" style="width: 2rem; height: 2rem;" role="status"></div>
+                            <div id="spinner2" class="spinner-grow text-success me-2" style="width: 2rem; height: 2rem;" role="status"></div>
+                            <div id="spinner3" class="spinner-grow text-success" style="width: 2rem; height: 2rem;" role="status">
+                            </div>
+                          </div>
 
                         </div>
                       </div>
   
                     </div>
 
-                  </div>
+                  </div>                
                   
                   <!-- Companies -->
                   <div class="tab-pane" id="companies" role="tabpanel" aria-labelledby="companies-tab">
@@ -484,6 +500,14 @@
                                           </label>
                                           <input type="text" class="form-control form-control-sm"
                                             placeholder="E.g. Technology, Software, Entertainment" id="exampleInputCompany">
+                                          <div class="mt-2">
+                                            <div class="btn rounded-pill btn-xs btn-outline-success me-1 ps-3 mt-2">
+                                              microsoft <i class="neu neu-so-close-circle ms-1"></i>
+                                            </div>
+                                            <div class="btn rounded-pill btn-xs btn-outline-success me-1 ps-3 mt-2">
+                                              apple <i class="neu neu-so-close-circle ms-1"></i>
+                                            </div>
+                                          </div>
                                         </div>
                       
                                         <div class="form-group mb-5">
@@ -544,7 +568,7 @@
                             <div class="g-recaptcha mb-5 d-inline-block" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" style="transform-origin: 0 0;"></div>
                           </div>
 
-                          <a class="btn btn-sm btn-outline-success btn-pill w-100" href="#!">
+                          <a class="btn btn-sm btn-outline-success btn-pill w-100" href="prospector-results.html">
                             <i class="neu-search"></i> Search criteria
                           </a>
                       
@@ -553,13 +577,14 @@
                       </div>
     
                       <div class="col-12 col-lg-8 pl-lg-2">
-                        <div class="card card-body custom-rounded bg-white border text-center">
+                        <div class="card card-body custom-rounded bg-white border text-center py-md-15">
 
-                          <img class="img-fluid" width="512" height="auto" alt="prospector search illustration" src="assets/img/illustrations/prospector-search.png">
-                      
-                          <p class="lead" style="color: #cbd5e1;">
-                            Filter and search your criteria to show the result
-                          </p>
+                          <div id="spinnerContainer" class="d-flex justify-content-center pt-6 pb-6 pt-md-8 pb-md-8">
+                            <div id="spinner1" class="spinner-grow text-success me-2" style="width: 2rem; height: 2rem;" role="status"></div>
+                            <div id="spinner2" class="spinner-grow text-success me-2" style="width: 2rem; height: 2rem;" role="status"></div>
+                            <div id="spinner3" class="spinner-grow text-success" style="width: 2rem; height: 2rem;" role="status">
+                            </div>
+                          </div>
 
                         </div>
                       </div>
@@ -641,6 +666,14 @@
                                       </label>
                                       <input type="text" class="form-control form-control-sm"
                                         placeholder="E.g. Microsoft, Google, Amazon" id="exampleInputCompany">
+                                      <div class="mt-2">
+                                        <div class="btn rounded-pill btn-xs btn-outline-success me-1 ps-3 mt-2">
+                                          microsoft <i class="neu neu-so-close-circle ms-1"></i>
+                                        </div>
+                                        <div class="btn rounded-pill btn-xs btn-outline-success me-1 ps-3 mt-2">
+                                          apple <i class="neu neu-so-close-circle ms-1"></i>
+                                        </div>
+                                      </div>
                                     </div>
 
                                   </form>
@@ -661,7 +694,7 @@
                             <div class="g-recaptcha mb-5 d-inline-block" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" style="transform-origin: 0 0;"></div>
                           </div>
                       
-                          <a class="btn btn-sm btn-outline-success btn-pill w-100" href="prospector-loading.html">
+                          <a class="btn btn-sm btn-outline-success btn-pill w-100" href="prospector-results.html">
                             <i class="neu-search"></i> Search criteria
                           </a>
                       
@@ -670,13 +703,14 @@
                       </div>
     
                       <div class="col-12 col-lg-8 pl-lg-2">
-                        <div class="card card-body custom-rounded bg-white border text-center">
+                        <div class="card card-body custom-rounded bg-white border text-center py-md-15">
 
-                          <img class="img-fluid" width="512" height="auto" alt="prospector search illustration" src="assets/img/illustrations/prospector-search.png">
-                      
-                          <p class="lead" style="color: #cbd5e1;">
-                            Filter and search your criteria to show the result
-                          </p>
+                          <div id="spinnerContainer" class="d-flex justify-content-center pt-6 pb-6 pt-md-8 pb-md-8">
+                            <div id="spinner1" class="spinner-grow text-success me-2" style="width: 2rem; height: 2rem;" role="status"></div>
+                            <div id="spinner2" class="spinner-grow text-success me-2" style="width: 2rem; height: 2rem;" role="status"></div>
+                            <div id="spinner3" class="spinner-grow text-success" style="width: 2rem; height: 2rem;" role="status">
+                            </div>
+                          </div>
 
                         </div>
                       </div>
